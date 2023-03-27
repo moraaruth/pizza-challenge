@@ -5969,3 +5969,37 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 10ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2190)
 
 
+Started GET "/restaurant_pizzas" for 127.0.0.1 at 2023-03-27 12:45:00 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant_pizzas"):
+  
+Started GET "/restaurant_pizza" for 127.0.0.1 at 2023-03-27 12:45:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant_pizza"):
+  
+Started POST "/restaurant_pizza" for 127.0.0.1 at 2023-03-27 12:45:32 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/restaurant_pizza"):
+  
+Started PATCH "/restaurant_pizza" for 127.0.0.1 at 2023-03-27 12:45:40 +0300
+  
+ActionController::RoutingError (No route matches [PATCH] "/restaurant_pizza"):
+  
+Started PATCH "/pizzas" for 127.0.0.1 at 2023-03-27 12:45:50 +0300
+  
+ActionController::RoutingError (No route matches [PATCH] "/pizzas"):
+  
+Started GET "/pizzas" for 127.0.0.1 at 2023-03-27 12:45:54 +0300
+Processing by PizzasController#index as */*
+  Parameters: {"pizza"=>{}}
+  [1m[36mPizza Load (48.4ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (15.8ms)
+Completed 200 OK in 213ms (Views: 113.9ms | ActiveRecord: 49.5ms | Allocations: 19204)
+
+
+Started POST "/pizzas/1" for 127.0.0.1 at 2023-03-27 12:46:04 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/pizzas/1"):
+  
