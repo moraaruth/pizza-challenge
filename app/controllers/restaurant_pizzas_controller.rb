@@ -7,9 +7,9 @@ class RestaurantPizzasController < ApplicationController
   
       if restaurant_pizza.save   
 
-         render json: { message: "Pizza added to restaurant successfully" }, status: :created
+         render json: { success: true, message: "Successfully added Pizza to restaurant successfully" }, status: :created
       else
-         render json: { errors: restaurant_pizza.errors.full_messages }, status: :unprocessable_entity
+         render json: { success: false, error: "Failed to add pizza to restaurant. Please check your input and try again.", errors: restaurant_pizza.errors.full_messages }, status: :unprocessable_entity
       end
     end
   
